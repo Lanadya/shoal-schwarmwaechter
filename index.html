@@ -6,6 +6,7 @@
 <title>SHOAL — a Schwarmwächter product</title>
 <meta name="description" content="SHOAL: autonomous swarm observability below the waterline. A Schwarmwächter product.">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" as="image" href="R2-12_Cover-Kette-am-Rumpf_v1.webp" fetchpriority="high">
 <style>
   :root{
     --navy:#04132b; --ivory:#f7f4ed; --gold:#b18030; --blue:#54a6dc;
@@ -18,6 +19,9 @@
   .mono{font-family:ui-monospace,"SF Mono","Cascadia Code","Roboto Mono",Consolas,monospace}
   section.page{position:relative;min-height:100vh;overflow:hidden;display:flex;background:var(--navy)}
   .full{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center}
+  .reveal{opacity:0;filter:blur(18px) saturate(.85);transform:scale(1.045);transition:opacity 1.3s cubic-bezier(.16,.8,.24,1),filter 1.3s cubic-bezier(.16,.8,.24,1),transform 1.8s cubic-bezier(.16,.8,.24,1)}
+  .reveal.is-in{opacity:1;filter:blur(0) saturate(1);transform:scale(1)}
+  @media (prefers-reduced-motion:reduce){.reveal{transition:none;opacity:1;filter:none;transform:none}}
   .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(4,19,43,.28) 0%,rgba(4,19,43,0) 32%,rgba(4,19,43,0) 55%,rgba(4,19,43,.92) 100%)}
   .shade.top{background:linear-gradient(180deg,rgba(4,19,43,.9) 0%,rgba(4,19,43,0) 48%)}
   .brand{position:absolute;top:22px;left:24px;right:24px;z-index:5;font-family:ui-monospace,"SF Mono","Cascadia Code","Roboto Mono",Consolas,monospace;font-size:11px;letter-spacing:.2em;color:var(--muted);text-transform:uppercase;display:flex;align-items:center;gap:.6em}
@@ -65,7 +69,7 @@
 
 <!-- 01 COVER -->
 <section class="page">
-  <img class="full" src="R2-12_Cover-Kette-am-Rumpf_v1.png" alt="">
+  <img class="full reveal" src="R2-12_Cover-Kette-am-Rumpf_v1.webp" alt="">
   <div class="shade"></div>
   <div class="content">
     <h1 style="text-transform:uppercase;letter-spacing:-.01em">SHOAL</h1>
@@ -76,7 +80,7 @@
 
 <!-- 02 THE PROBLEM -->
 <section class="page">
-  <img class="full" src="R2-04_Havarist-Fregatte_v1.png" alt="">
+  <img class="full reveal" src="R2-04_Havarist-Fregatte_v1.webp" alt="">
   <div class="shade"></div>
   <div class="brand"><span class="sw">SCHWARMWÄCHTER</span><span class="sep">·</span>SHOAL</div>
   <div class="content">
@@ -88,7 +92,7 @@
 
 <!-- 03 SCALE REVERSAL -->
 <section class="page">
-  <img class="full" src="R2-03_Fisch-Hand_v2.png" alt="">
+  <img class="full reveal" src="R2-03_Fisch-Hand_v2.webp" alt="">
   <div class="shade top"></div>
   <div class="brand"><span class="sw">SCHWARMWÄCHTER</span><span class="sep">·</span>SHOAL</div>
   <div class="content top">
@@ -101,7 +105,7 @@
 
 <!-- 04 DEPLOYMENT -->
 <section class="page">
-  <img class="full" src="R2-05_Abwurf-Flugdeck_v3_tag.png" alt="">
+  <img class="full reveal" src="R2-05_Abwurf-Flugdeck_v3_tag.webp" alt="">
   <div class="shade"></div>
   <div class="brand"><span class="sw">SCHWARMWÄCHTER</span><span class="sep">·</span>SHOAL</div>
   <div class="content">
@@ -157,7 +161,7 @@
 
 <!-- 06 NETWORK -->
 <section class="page">
-  <img class="full" src="R2-14_Gefluteter-Raum-Split_v2_ohneText.png" alt="">
+  <img class="full reveal" src="R2-14_Gefluteter-Raum-Split_v2_ohneText.webp" alt="">
   <div class="shade"></div>
   <div class="brand"><span class="sw">SCHWARMWÄCHTER</span><span class="sep">·</span>SHOAL</div>
   <div class="content">
@@ -170,7 +174,7 @@
 
 <!-- 07 NODE -->
 <section class="page">
-  <img class="full" src="R2-08_Mapper-Schott_v2.png" alt="">
+  <img class="full reveal" src="R2-08_Mapper-Schott_v2.webp" alt="">
   <div class="shade"></div>
   <div class="brand"><span class="sw">SCHWARMWÄCHTER</span><span class="sep">·</span>SHOAL</div>
   <div class="content">
@@ -185,7 +189,7 @@
 <section class="page light" style="background:#f4f1e9;display:block;padding-top:90px">
   <div class="brand"><span class="sw">SCHWARMWÄCHTER</span><span class="sep">·</span>SHOAL</div>
   <div style="position:relative;z-index:2;max-width:900px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:center;min-height:52vh">
-    <img src="R2-17_Dashboard-Befund_v2.png" alt="" style="max-width:100%;max-height:60vh;border-radius:6px;box-shadow:0 24px 60px rgba(4,19,43,.18);border:1px solid rgba(4,19,43,.1)">
+    <img class="reveal" src="R2-17_Dashboard-Befund_v2.webp" alt="" style="max-width:100%;max-height:60vh;border-radius:6px;box-shadow:0 24px 60px rgba(4,19,43,.18);border:1px solid rgba(4,19,43,.1)">
   </div>
   <div class="content" style="position:relative;max-width:900px;margin:0 auto;padding:0 24px 64px">
     <h1 class="small" style="color:var(--navy)">Not more data.<br>A decision-ready picture.</h1>
@@ -206,7 +210,7 @@
 
 <!-- 10 BUSINESS -->
 <section class="page">
-  <img class="full" src="R2-07_Perlenkette-Gang_v1.png" alt="" style="opacity:.3">
+  <img class="full reveal" src="R2-07_Perlenkette-Gang_v1.webp" alt="" style="opacity:.3">
   <div class="shade"></div>
   <div class="brand"><span class="sw">SCHWARMWÄCHTER</span><span class="sep">·</span>SHOAL</div>
   <div class="content center" style="margin:auto;padding-top:96px">
@@ -222,7 +226,7 @@
 
 <!-- 11 REGIONAL -->
 <section class="page">
-  <img class="full" src="R2-12_Cover-Kette-am-Rumpf_v1.png" alt="" style="opacity:.4">
+  <img class="full reveal" src="R2-12_Cover-Kette-am-Rumpf_v1.webp" alt="" style="opacity:.4">
   <div class="shade"></div>
   <div class="brand"><span class="sw">SCHWARMWÄCHTER</span><span class="sep">·</span>SHOAL</div>
   <div class="content center" style="margin:auto">
@@ -235,7 +239,7 @@
 
 <!-- 12 PROGRAMME / INVITATION -->
 <section class="page">
-  <img class="full" src="R2-01_Fisch-Hero_v1.png" alt="" style="opacity:.55;object-position:right center">
+  <img class="full reveal" src="R2-01_Fisch-Hero_v1.webp" alt="" style="opacity:.55;object-position:right center">
   <div class="shade"></div>
   <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(4,19,43,.94) 0%,rgba(4,19,43,.78) 42%,rgba(4,19,43,0) 78%)"></div>
   <div class="brand"><span class="sw">SCHWARMWÄCHTER</span><span class="sep">·</span>SHOAL</div>
@@ -263,6 +267,31 @@
     </div>
   </div>
 </footer>
+
+<script>
+(function(){
+  var els = document.querySelectorAll('.reveal');
+  if (!('IntersectionObserver' in window)) {
+    els.forEach(function(el){ el.classList.add('is-in'); });
+    return;
+  }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-in');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { rootMargin: '0px 0px -5% 0px', threshold: 0.15 });
+  els.forEach(function(el){ io.observe(el); });
+  // Cover image: reveal immediately rather than waiting for scroll.
+  var cover = document.querySelector('.page .reveal');
+  if (cover) {
+    if (cover.complete) { requestAnimationFrame(function(){ cover.classList.add('is-in'); }); }
+    else { cover.addEventListener('load', function(){ cover.classList.add('is-in'); }, { once:true }); }
+  }
+})();
+</script>
 
 </body>
 </html>
